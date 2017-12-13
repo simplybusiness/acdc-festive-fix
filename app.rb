@@ -7,9 +7,13 @@ require 'faker'
 # Load environment configuration
 Dotenv.load
 
+set :public_folder, File.dirname(__FILE__) + '/public'
+
+
 # Render home page
 get '/' do
-  File.read(File.join('public', 'index.html'))
+  redirect '/backoffice/index.html'
+#  File.read(File.join('public', 'index.html'))
 end
 
 # Generate a token for use in our Video application

@@ -1,0 +1,14 @@
+@keyframes pulse { 
+    0%   {background: red}
+    50%  {background: #fcc}
+    100% {background: red}
+}
+
+.pulsating {
+    animation: pulse 1.5s infinite;
+}
+
+#speechify {
+    outline: none;
+    background: white;
+}
